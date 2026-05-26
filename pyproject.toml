@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aegissim"
+version = "0.1.0"
+description = "Panda3D warehouse drone simulator for AI training workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "AegisSim Contributors"}
+]
+dependencies = [
+  "panda3d==1.10.16",
+  "numpy>=1.26",
+  "tomli>=2.0.1; python_version < '3.11'",
+  "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+aegissim = "aegissim.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
