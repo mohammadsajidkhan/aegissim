@@ -1,6 +1,6 @@
 # AegisSim — Panda3D Warehouse Drone AI Simulator
 
-AegisSim is a **GitHub-ready, local-first Panda3D project** for building a production-style 3D simulation environment for AI training. It focuses on a warehouse drone navigation task with procedural 3D environments, simulation logic, LiDAR-style sensing, episode management, reward shaping, telemetry, and a Gym-like Python API.
+AegisSim is a **local-first Panda3D project** for building a production-style 3D simulation environment for AI training. It focuses on a warehouse drone navigation task with procedural 3D environments, simulation logic, LiDAR-style sensing, episode management, reward shaping, telemetry, and a Gym-like Python API.
 
 This repository is designed to help you build practical skills in:
 
